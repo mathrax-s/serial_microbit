@@ -3,8 +3,8 @@
 import processing.serial.*;
 Serial myPort;
 
-//USBポートに含まれるこの文字列を探します
-String portName = "usb";
+//USB-DEVICE
+String portName = "COM4";
 int portNumber;
 
 
