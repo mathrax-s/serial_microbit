@@ -16,13 +16,13 @@ void setup() {
 void draw() {
   background(0);
 
-  mX = map(x, -1023, 1023, 0, 255); 
-  mY = map(y, -1023, 1023, 0, 255); 
-  mZ = map(z, -1023, 1023, 0, 255);
+  mX = map(x, 0, 255, 0, 255); 
+  mY = map(y, 0, 255, 0, 255); 
+  mZ = map(z, 0, 255, 0, 255);
 
-  aveX = aveX * (31.0/32.0) + mX/32.0;
-  aveY = aveY * (31.0/32.0) + mY/32.0;
-  aveZ = aveZ * (31.0/32.0) + mZ/32.0;
+  aveX = aveX * (3.0/4.0) + mX/4.0;
+  aveY = aveY * (3.0/4.0) + mY/4.0;
+  aveZ = aveZ * (3.0/4.0) + mZ/4.0;
 
   fill(aveX, aveY, aveZ);
   ellipse(width/2, height/2, 400, 400);

@@ -49,7 +49,7 @@ void serialEvent (Serial p) {
     stringData=trim(stringData);
     int microbitData[]=int(split(stringData, ','));
 
-    if (microbitData.length>3) {
+    if (microbitData.length>1) {
 
       x=microbitData[0];
       y=microbitData[1];
